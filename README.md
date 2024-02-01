@@ -29,6 +29,7 @@ A property of the circular buffer is that when it is full and a subsequent write
 </div>
 Alternatively, the routines that manage the buffer could prevent overwriting the data and return an error or raise an exception. Whether or not data is overwritten is up to the semantics of the buffer routines or the application using the circular buffer.
 <p> </p>
+<p> </p>
 Finally, if two elements are now removed then what would be returned is not 3 & 4 (or rather now A & B) but 5 & 6 because 5 & 6 are now the oldest elements, yielding the buffer with: 
 
 <div align="center">
