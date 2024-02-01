@@ -1,4 +1,7 @@
-# MaxMemArray - Circular Buffer Implementation
+<div align="center">
+  <h1>MaxMemArray - Circular Buffer Implementation</h1>
+</div>
+
 MaxMemArr is a JavaScript class that implements a circular buffer. Circular buffers are also known as circular queues or ring buffers. They are data structures that use a fixed-size, cyclically connected array to efficiently manage and store data.
 
 ## Definition
