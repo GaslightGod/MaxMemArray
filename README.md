@@ -6,7 +6,7 @@ MaxMemArr is a JavaScript class that implements a circular buffer. Circular buff
 
 <div align="center">
   <h1>Definition</h1>
-</div>
+
 A circular buffer first starts out empty and has a set length. In the diagram below is a 7-element buffer: 
 <div align="center">
 <img src="https://camo.githubusercontent.com/3991d8e6bf6db6ebe92fff97572f8f9e21306252fee1142f7a1d19e506d550f0/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f662f66372f43697263756c61725f6275666665725f2d5f656d7074792e7376672f35303070782d43697263756c61725f6275666665725f2d5f656d7074792e7376672e706e67" alt="" data-canonical-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Circular_buffer_-_empty.svg/500px-Circular_buffer_-_empty.svg.png" style="max-width: 100%;">
@@ -40,7 +40,7 @@ Finally, if two elements are now removed then what would be returned is not 3 & 
 <div align="center">
 <img src="https://camo.githubusercontent.com/efdb75fe077d826b8300d900521d860a07255ef2cc75751ac8c38f8f4c7182cd/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f342f34332f43697263756c61725f6275666665725f2d5f583738394142582e7376672f35303070782d43697263756c61725f6275666665725f2d5f583738394142582e7376672e706e67" alt="" data-canonical-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Circular_buffer_-_X789ABX.svg/500px-Circular_buffer_-_X789ABX.svg.png" style="max-width: 100%;">
 </div>
-
+</div>
 
 
 ## Installation
