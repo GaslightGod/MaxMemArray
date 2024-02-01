@@ -3,22 +3,39 @@ MaxMemArr is a JavaScript class that implements a circular buffer. Circular buff
 
 ## Definition
 A circular buffer first starts out empty and has a set length. In the diagram below is a 7-element buffer: 
-<img src="[![250px-Circular_buffer_-_empty svg](https://github.com/GaslightGod/MaxMemArray/assets/60765944/e1fe6d81-5d2b-4a8b-9252-cf7be6e0b8fb)](https://en.wikipedia.org/wiki/Circular_buffer#/media/File:Circular_buffer_-_empty.svg)
-" alt="Alt Text" width="400">
-Assume that 1 is written in the center of a circular buffer (the exact starting location is not important in a circular buffer): 
-![Example Image]([https://github.com/your-username/your-repository/raw/main/path/to/your/image.png](https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Circular_buffer_-_XX1XXXX.svg/250px-Circular_buffer_-_XX1XXXX.svg.png))
-Then assume that two more elements are added to the circular buffer — 2 & 3 — which get put after 1: 
-![Example Image]([https://github.com/your-username/your-repository/raw/main/path/to/your/image.png](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Circular_buffer_-_XX123XX.svg/250px-Circular_buffer_-_XX123XX.svg.png))
-If two elements are removed, the two oldest values inside of the circular buffer would be removed. Circular buffers use FIFO (first in, first out) logic. In the example, 1 & 2 were the first to enter the circular buffer, they are the first to be removed, leaving 3 inside of the buffer. 
-![Example Image](https://github.com/your-username/your-repository/raw/main/path/to/your/image.png)
-If the buffer has 7 elements, then it is completely full: 
-![Example Image](https://github.com/your-username/your-repository/raw/main/path/to/your/image.png)
-A property of the circular buffer is that when it is full and a subsequent write is performed, then it starts overwriting the oldest data. In the current example, two more elements — A & B — are added and they overwrite the 3 & 4: 
-![Example Image](https://github.com/your-username/your-repository/raw/main/path/to/your/image.png)
-Alternatively, the routines that manage the buffer could prevent overwriting the data and return an error or raise an exception. Whether or not data is overwritten is up to the semantics of the buffer routines or the application using the circular buffer.
 
+<div align="center">
+  <img src="https://en.wikipedia.org/wiki/Circular_buffer#/media/File:Circular_buffer_-_empty.svg" alt="Alt Text" width="400">
+</div>
+
+Assume that 1 is written in the center of a circular buffer (the exact starting location is not important in a circular buffer): 
+<div align="center">
+  <img src="" alt="Alt Text" width="400">
+</div>
+Then assume that two more elements are added to the circular buffer — 2 & 3 — which get put after 1: 
+<div align="center">
+  <img src="" alt="Alt Text" width="400">
+</div>
+If two elements are removed, the two oldest values inside of the circular buffer would be removed. Circular buffers use FIFO (first in, first out) logic. In the example, 1 & 2 were the first to enter the circular buffer, they are the first to be removed, leaving 3 inside of the buffer. 
+<div align="center">
+  <img src="" alt="Alt Text" width="400">
+</div>
+If the buffer has 7 elements, then it is completely full: 
+<div align="center">
+  <img src="" alt="Alt Text" width="400">
+</div>
+A property of the circular buffer is that when it is full and a subsequent write is performed, then it starts overwriting the oldest data. In the current example, two more elements — A & B — are added and they overwrite the 3 & 4: 
+<div align="center">
+  <img src="" alt="Alt Text" width="400">
+</div>
+Alternatively, the routines that manage the buffer could prevent overwriting the data and return an error or raise an exception. Whether or not data is overwritten is up to the semantics of the buffer routines or the application using the circular buffer.
+<div align="center">
+  <img src="" alt="Alt Text" width="400">
+</div>
 Finally, if two elements are now removed then what would be returned is not 3 & 4 (or rather now A & B) but 5 & 6 because 5 & 6 are now the oldest elements, yielding the buffer with: 
-![Example Image](https://github.com/your-username/your-repository/raw/main/path/to/your/image.png)
+<div align="center">
+  <img src="" alt="Alt Text" width="400">
+</div>
 
 ## Installation
 
