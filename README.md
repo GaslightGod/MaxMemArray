@@ -13,11 +13,11 @@ Assume that 1 is written in the center of a circular buffer (the exact starting 
 </div>
 Then assume that two more elements are added to the circular buffer — 2 & 3 — which get put after 1: 
 <div align="center">
-<img src="https://camo.githubusercontent.com/3991d8e6bf6db6ebe92fff97572f8f9e21306252fee1142f7a1d19e506d550f0/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f662f66372f43697263756c61725f6275666665725f2d5f656d7074792e7376672f35303070782d43697263756c61725f6275666665725f2d5f656d7074792e7376672e706e67" alt="" data-canonical-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Circular_buffer_-_empty.svg/500px-Circular_buffer_-_empty.svg.png" style="max-width: 100%;">
+<img src="https://camo.githubusercontent.com/58681f49d9e459ca4472e612a49f066227bfae79aca896b1e375885ab99c1ca5/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f642f64372f43697263756c61725f6275666665725f2d5f585831323358582e7376672f35303070782d43697263756c61725f6275666665725f2d5f585831323358582e7376672e706e67" alt="" data-canonical-src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Circular_buffer_-_XX123XX.svg/500px-Circular_buffer_-_XX123XX.svg.png" style="max-width: 100%;">
 </div>
 If two elements are removed, the two oldest values inside of the circular buffer would be removed. Circular buffers use FIFO (first in, first out) logic. In the example, 1 & 2 were the first to enter the circular buffer, they are the first to be removed, leaving 3 inside of the buffer. 
 <div align="center">
-<img src="https://camo.githubusercontent.com/58681f49d9e459ca4472e612a49f066227bfae79aca896b1e375885ab99c1ca5/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f642f64372f43697263756c61725f6275666665725f2d5f585831323358582e7376672f35303070782d43697263756c61725f6275666665725f2d5f585831323358582e7376672e706e67" alt="" data-canonical-src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Circular_buffer_-_XX123XX.svg/500px-Circular_buffer_-_XX123XX.svg.png" style="max-width: 100%;">
+<img src="https://camo.githubusercontent.com/30c86c6ac5650eb25974893a3093431ffabc38eda51e124677456c1d2d9cf614/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f312f31312f43697263756c61725f6275666665725f2d5f585858583358582e7376672f35303070782d43697263756c61725f6275666665725f2d5f585858583358582e7376672e706e67" style="max-width: 100%;">
 </div>
 If the buffer has 7 elements, then it is completely full: 
 <div align="center">
