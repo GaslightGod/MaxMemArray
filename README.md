@@ -28,13 +28,14 @@ A property of the circular buffer is that when it is full and a subsequent write
 <img src="https://camo.githubusercontent.com/25ad03b920b5dbd32d30900efa21064349a2b6170ab8676ae630768d7c0884a8/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f622f62612f43697263756c61725f6275666665725f2d5f363738394142352e7376672f35303070782d43697263756c61725f6275666665725f2d5f363738394142352e7376672e706e67" alt="" data-canonical-src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Circular_buffer_-_6789AB5.svg/500px-Circular_buffer_-_6789AB5.svg.png" style="max-width: 100%;">
 </div>
 Alternatively, the routines that manage the buffer could prevent overwriting the data and return an error or raise an exception. Whether or not data is overwritten is up to the semantics of the buffer routines or the application using the circular buffer.
+
+Finally, if two elements are now removed then what would be returned is not 3 & 4 (or rather now A & B) but 5 & 6 because 5 & 6 are now the oldest elements, yielding the buffer with: 
+
 <div align="center">
 <img src="https://camo.githubusercontent.com/efdb75fe077d826b8300d900521d860a07255ef2cc75751ac8c38f8f4c7182cd/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f342f34332f43697263756c61725f6275666665725f2d5f583738394142582e7376672f35303070782d43697263756c61725f6275666665725f2d5f583738394142582e7376672e706e67" alt="" data-canonical-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Circular_buffer_-_X789ABX.svg/500px-Circular_buffer_-_X789ABX.svg.png" style="max-width: 100%;">
 </div>
-Finally, if two elements are now removed then what would be returned is not 3 & 4 (or rather now A & B) but 5 & 6 because 5 & 6 are now the oldest elements, yielding the buffer with: 
-<div align="center">
 
-</div>
+
 
 ## Installation
 
