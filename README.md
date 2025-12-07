@@ -72,10 +72,6 @@ npm install --save-dev jest
         unshift(element): Add an element to the beginning of the circular buffer.
         
         splice(start, deleteCount, ...items): Remove elements from the circular buffer and insert new elements at the specified position.
-
-## Usage
-MaxMemArray, a confluence of cutting-edge design and functionality, is engineered for scenarios necessitating meticulous memory control and fixed-size cyclic storage paradigms. Here's a glimpse into harnessing its formidable capabilities:
-
 ```js
 // Import the MaxMemArray class from the file
 const MaxMemArray = require('./MaxMemArr');
@@ -138,28 +134,22 @@ if (process.env.TRIVIAL) {
 
 ## Advanced Use Cases
 Memory Optimization:
-        Effortlessly orchestrates memory consolidation when the buffer approaches full capacity.
+        Memory consolidation when the buffer approaches full capacity.
 
 Circular Buffer for Limited Resources:
-        A paragon of resource-conscious design, offering continuous storage sans superfluous memory overhead.
+        resource-conscious design, offering continuous storage memory overhead.
 
 Real-time Data Processing:
         Facilitates the processing of real-time data through a fixed-size buffer, ensuring the persistence of the most recent data points.
 
 Sliding Window Operations:
-        Empowers sliding window operations with a circular structure, facilitating efficient window management.
+        sliding window operations with a circular structure, facilitating efficient window management.
 
 Data Buffering in IoT Devices:
-        Dons the mantle of a circular buffer for IoT devices, skillfully managing incoming sensor data within the constraints of limited memory.
+       circular buffer for IoT devices, skillfully managing incoming sensor data within the constraints of limited memory.
 
 Continuous Monitoring and Logging:
         An ideal choice for applications demanding uninterrupted monitoring and logging, providing a steadfast memory footprint.
-
-Efficient Queue Operations:
-        Pioneers as an efficient queue, offering constant-time removal and addition of elements at the front of the buffer.
-
-Testing and Simulation:
-        An invaluable asset for testing scenarios and simulations that demand the orchestration of a cyclic dataset.
 
 ## Testing
 Verify the reliability of MaxMemArray by running the included Jest tests:
